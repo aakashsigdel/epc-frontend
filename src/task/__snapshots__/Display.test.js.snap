@@ -23,3 +23,27 @@ exports[`should render <Display /> correctly 1`] = `
   </span>
 </div>
 `;
+
+exports[`should render <Display /> correctly 2`] = `
+<div
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "height": 100,
+      "width": 400,
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "opacity": 0.8,
+      }
+    }
+  >
+    hello
+  </span>
+</div>
+`;

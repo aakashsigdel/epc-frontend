@@ -10,9 +10,12 @@ it('should render <Display /> correctly', () => {
       bgColor={'#fff'}
       onClick={() => null}
     />
-  )
-  const snapshotTree = component.toJSON();
+  );
+  let snapshotTree = component.toJSON();
+  expect(snapshotTree).toMatchSnapshot();
 
+  snapshotTree.props.onClick();
+  snapshotTree = component.toJSON();
   expect(snapshotTree).toMatchSnapshot();
 });
 

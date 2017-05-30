@@ -6,3 +6,10 @@ exports[`should render <Input /> correctly 1`] = `
   type="text"
 />
 `;
+
+exports[`should render <Input /> correctly 2`] = `
+<input
+  onChange={[Function]}
+  type="text"
+/>
+`;
