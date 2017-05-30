@@ -1,8 +1,11 @@
+import fetch from 'isomorphic-fetch';
 import {
   compose,
   head,
   prop
 } from 'ramda';
+
+export const API = 'http://www.colr.org/json/color';
 
 export const getColor = compose(
   prop('hex'),
@@ -10,8 +13,8 @@ export const getColor = compose(
   prop('colors')
 );
 
-const fetchColor = () =>
-  fetch('http://www.colr.org/json/color/random')
+export const fetchColor = () =>
+  fetch(API + '/random')
     .then(resp => resp.json())
     .then(json => '#' + getColor(json));
 

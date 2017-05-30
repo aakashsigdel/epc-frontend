@@ -14,7 +14,7 @@ class App extends Component {
     text: 'Click Me!'
   };
 
-  renderLoading = () => {
+  renderDisplay = () => {
     const { color, loading, text } = this.state;
 
     return loading
@@ -43,7 +43,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Input onChangeText={this.onChangeText} />
           <h2>Welcome to React</h2>
-          { this.renderLoading() }
+          { this.renderDisplay() }
         </div>
       </div>
     );

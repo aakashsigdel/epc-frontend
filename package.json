@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "ramda": "^0.24.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "nock": "^9.0.13",
     "prop-types": "^15.5.10",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.5.4"
