@@ -4,7 +4,13 @@ import Display from './Display';
 import renderer from 'react-test-renderer';
 
 it('should render <Display /> correctly', () => {
-  const component = renderer.create(<Display />)
+  const component = renderer.create(
+    <Display
+      inputText={'hello'}
+      bgColor={'#fff'}
+      onClick={() => null}
+    />
+  )
   const snapshotTree = component.toJSON();
 
   expect(snapshotTree).toMatchSnapshot();

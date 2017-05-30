@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `<div />`;
-
-exports[`should render <Display /> correctly 1`] = `<div />`;
-
-exports[`should render <Input /> correctly 1`] = `<div />`;
+exports[`should render <Display /> correctly 1`] = `
+<div
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "height": 100,
+      "width": 400,
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "opacity": 0.8,
+      }
+    }
+  >
+    hello
+  </span>
+</div>
+`;

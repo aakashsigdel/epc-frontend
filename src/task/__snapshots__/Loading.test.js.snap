@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render <Loading /> correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "backgroundColor": "green",
+      "color": "white",
+    }
+  }
+>
   Loading...
 </div>
 `;

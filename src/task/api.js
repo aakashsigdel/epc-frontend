@@ -13,6 +13,6 @@ export const getColor = compose(
 const fetchColor = () =>
   fetch('http://www.colr.org/json/color/random')
     .then(resp => resp.json())
-    .then(json => getColor(json));
+    .then(json => '#' + getColor(json));
 
 export default fetchColor;
