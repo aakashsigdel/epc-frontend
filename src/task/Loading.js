@@ -1,7 +1,9 @@
 import React from 'react';
 
+import './Loading.css';
+
 const Display = props =>
-  <div style={{ backgroundColor: 'green', color: 'white' }}>Loading...</div>;
+  <div className="loader" />;
 
 export default Display;
 

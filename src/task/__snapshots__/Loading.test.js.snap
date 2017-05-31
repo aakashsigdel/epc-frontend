@@ -2,13 +2,6 @@
 
 exports[`should render <Loading /> correctly 1`] = `
 <div
-  style={
-    Object {
-      "backgroundColor": "green",
-      "color": "white",
-    }
-  }
->
-  Loading...
-</div>
+  className="loader"
+/>
 `;
