@@ -14,19 +14,10 @@ class App extends Component {
     text: 'Click Me!'
   };
 
-  renderDisplay = () => {
-    const { color, loading, text } = this.state;
-
-    return loading
+  renderLoader = () =>
+    this.state.loading
       ? <Loading />
-      : (
-        <Display
-          bgColor={ color }
-          onClick={ this.getBoxColor }
-          inputText={ text }
-        />
-      );
-  }
+      : null;
 
   getBoxColor = () => {
     this.setState({ loading: true });
@@ -37,13 +28,19 @@ class App extends Component {
   onChangeText = e => this.setState({ text: e.target.value });
 
   render() {
+    const { color, text } = this.state;
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="task-container">
             <Input onChangeText={this.onChangeText} />
-            { this.renderDisplay() }
+            <Display
+              bgColor={ color }
+              onClick={ this.getBoxColor }
+              inputText={ text }
+            />
+            { this.renderLoader() }
           </div>
         </div>
       </div>

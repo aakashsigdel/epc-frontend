@@ -29,14 +29,7 @@ exports[`should render <App /> correctly 1`] = `
           }
         }
       >
-        <div
-          style={
-            Object {
-              "backgroundColor": "grey",
-              "opacity": 0.8,
-            }
-          }
-        >
+        <div>
           Click Me!
         </div>
       </div>
