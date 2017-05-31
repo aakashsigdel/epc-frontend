@@ -41,9 +41,10 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Input onChangeText={this.onChangeText} />
-          <h2>Welcome to React</h2>
-          { this.renderDisplay() }
+          <div className="task-container">
+            <Input onChangeText={this.onChangeText} />
+            { this.renderDisplay() }
+          </div>
         </div>
       </div>
     );

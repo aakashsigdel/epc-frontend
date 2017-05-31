@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Display.css';
+
 const Display = props =>
   <div
-    style={{
-      width: 400,
-      height: 100,
-      backgroundColor: props.bgColor
-    }}
+    className="display-container"
+    style={{ backgroundColor: props.bgColor }}
     onClick={props.onClick}
   >
-    <span style={{backgroundColor: 'grey', opacity: 0.8}}>
+    <div>
       {props.inputText}
-    </span>
+    </div>
   </div>;
 
 Display.propTypes = {

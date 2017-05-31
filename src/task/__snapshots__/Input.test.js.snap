@@ -3,6 +3,7 @@
 exports[`should render <Input /> correctly 1`] = `
 <input
   onChange={[Function]}
+  placeholder="Type on me"
   type="text"
 />
 `;
@@ -10,6 +11,7 @@ exports[`should render <Input /> correctly 1`] = `
 exports[`should render <Input /> correctly 2`] = `
 <input
   onChange={[Function]}
+  placeholder="Type on me"
   type="text"
 />
 `;

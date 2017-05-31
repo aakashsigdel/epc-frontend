@@ -2,16 +2,15 @@
 
 exports[`should render <Display /> correctly 1`] = `
 <div
+  className="display-container"
   onClick={[Function]}
   style={
     Object {
       "backgroundColor": "#fff",
-      "height": 100,
-      "width": 400,
     }
   }
 >
-  <span
+  <div
     style={
       Object {
         "backgroundColor": "grey",
@@ -20,22 +19,21 @@ exports[`should render <Display /> correctly 1`] = `
     }
   >
     hello
-  </span>
+  </div>
 </div>
 `;
 
 exports[`should render <Display /> correctly 2`] = `
 <div
+  className="display-container"
   onClick={[Function]}
   style={
     Object {
       "backgroundColor": "#fff",
-      "height": 100,
-      "width": 400,
     }
   }
 >
-  <span
+  <div
     style={
       Object {
         "backgroundColor": "grey",
@@ -44,6 +42,6 @@ exports[`should render <Display /> correctly 2`] = `
     }
   >
     hello
-  </span>
+  </div>
 </div>
 `;

@@ -1,0 +1,12 @@
+.display-container {
+  width: 200px;
+  margin: 5px auto;
+  padding: 15px;
+  border: 1px solid #5f93a7;
+}
+
+.display-container div {
+  background-color: grey;
+  opacity: 0.8;
+  overflow: scroll;
+}
